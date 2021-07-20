@@ -46,4 +46,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
+<<<<<<< Updated upstream
 Hello world
+=======
+Hi Janac was here.
+>>>>>>> Stashed changes
