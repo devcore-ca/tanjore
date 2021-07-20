@@ -45,4 +45,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+<<<<<<< HEAD
 Hello, it's Vikram.
+=======
+
+Hello world
+Hi Janac was here.
+>>>>>>> c4874be9f31980880499063b1e91e77efa355729
