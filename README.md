@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Technologies Used in this Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Create React App](https://github.com/facebook/create-react-app).
+- React
+- NodeJS
+- [Prettier](https://prettier.io/docs/en/install.html).
+
 
 ## Available Scripts
 
