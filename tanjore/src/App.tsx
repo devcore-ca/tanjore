@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router, Link, Route, Switch
+} from "react-router-dom";
+import Menu from './components/Menu';
+import Home from './components/Home/Home';
+import Settings from './components/Settings';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hi My name is Vikram, my friends are Keethan, I don't like Vithuren.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Link to="/home">Home</Link>
+      <Link to="/menu">Menu</Link>
+      <Link to="/settings">Settings</Link>
+      
+      <Switch>
+        <Route path="/menu">
+          <Menu/>
+        </Route>
+        <Route path="/settings">
+          <Settings/>
+        </Route>
+        <Route path="/">
+          <Home/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
