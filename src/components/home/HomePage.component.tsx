@@ -1,8 +1,10 @@
 
-
 interface Props {
+	myAge: number;
+	myAge1: number;
+	myAge2: number;
 }
 
- export const HomePage: React.FC<Props> = () => {
-	return <p> hello </p>;
+export const HomePageComponent: React.FC<Props> = (props: Props) => {
+	return (<div>Hi ${props.myAge1}</div>);
 }
