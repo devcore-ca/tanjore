@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { HomePage } from './components/home/HomePage.component';
+import Menu from './components/menu/menu'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hi My name is Vikram, my friends are Keethan, I don't like Vithuren.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Link to="/home">Home</Link>
+      <Link to="/menu">Menu</Link>
+
+      <Switch>
+
+        <Route path="/menu">
+          <Menu />
+        </Route>
+
+        <Route path="/">
+          <HomePage />
+        </Route>
+
+      </Switch>
+    </Router>
   );
 }
 
