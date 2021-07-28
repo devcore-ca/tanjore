@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default function Menu() {
-  return <div>You like snacks?</div>;
+  return (
+    <div>
+        You like snacks?
+    </div>
+  );
 }
