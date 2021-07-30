@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import Menu from '../components/menu/Menu.component';
 import Home from '../components/home/Home.component';
+import Gallery from '../components/gallery/Gallery.component';
 import {Routes} from './Routes';
 import { AppBar, Tab, Toolbar } from '@material-ui/core';
 
@@ -31,6 +32,7 @@ function Router() {
         <Toolbar variant="dense">
           <TabLink label="Home" to={Routes.home} /> 
           <TabLink label="Menu" to={Routes.menu} /> 
+          <TabLink label="Gallery" to={Routes.gallery} /> 
         </Toolbar>
       </AppBar>
       
@@ -38,9 +40,13 @@ function Router() {
         <Route path={Routes.menu}>
           <Menu/>
         </Route>
+        <Route path={Routes.gallery}>
+          <Gallery/>
+        </Route>
         <Route path={Routes.home}>
           <Home/>
         </Route>
+
       </Switch>
     </BrowserRouter>
   );
