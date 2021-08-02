@@ -1,23 +1,26 @@
-import React from 'react';
-import {
-  BrowserRouter, Link, Route, Switch
-} from "react-router-dom";
-import Menu from '../components/menu/Menu.component';
-import Home from '../components/home/Home.component';
-import {Routes} from './Routes';
+import React from "react";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import Menu from "../components/menu/Menu.component";
+import Home from "../components/home/Home.component";
+import Contact from "../components/contact/Contact.component";
+import { Routes } from "./Routes";
 
 function Router() {
   return (
     <BrowserRouter>
       <Link to={Routes.home}>Home</Link>
       <Link to={Routes.menu}>Menu</Link>
-      
+      <Link to="/contact">Contact</Link>
+
       <Switch>
         <Route path={Routes.menu}>
-          <Menu/>
+          <Menu />
         </Route>
         <Route path={Routes.home}>
-          <Home/>
+          <Home />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </BrowserRouter>

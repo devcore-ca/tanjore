@@ -1,7 +1,8 @@
 const StaticRoutes = {
-  home: '/',
-  menu: '/menu',
-  settings: '/settings'
-}
+  home: "/",
+  menu: "/menu",
+  contact: "/contact",
+  settings: "/settings",
+};
 
-export const Routes = {...StaticRoutes};
+export const Routes = { ...StaticRoutes };
