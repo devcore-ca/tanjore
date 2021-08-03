@@ -5,12 +5,34 @@ import {
 import Menu from '../components/menu/Menu.component';
 import Home from '../components/home/Home.component';
 import {Routes} from './Routes';
+import { AppBar, Tab, Toolbar } from '@material-ui/core';
+
+interface TabLinkProps {
+  label: string,
+  to: string
+}
 
 function Router() {
+
+  function TabLink(props: TabLinkProps) {
+    const { label, to } = props;
+  
+    const renderLink = React.useMemo(
+      () => React.forwardRef((itemProps, ref: any) => <Link to={to} ref={ref} {...itemProps} />),
+      [to],
+    );
+  
+    return <Tab label={label} component={renderLink} />;
+  }
+  
   return (
     <BrowserRouter>
-      <Link to={Routes.home}>Home</Link>
-      <Link to={Routes.menu}>Menu</Link>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <TabLink label="Home" to={Routes.home} /> 
+          <TabLink label="Menu" to={Routes.menu} /> 
+        </Toolbar>
+      </AppBar>
       
       <Switch>
         <Route path={Routes.menu}>
