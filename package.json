@@ -2,7 +2,7 @@
   "name": "tanjore",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dev-corps.github.io/tanjore",
+  "homepage": "https://dev-corps.github.io/tanjore/",
   "dependencies": {
     "@material-ui/core": "4.12.2",
     "@testing-library/jest-dom": "^5.11.4",
