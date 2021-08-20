@@ -41,15 +41,13 @@ const sourceImages = [
     );
 
 function Gallery() {
-    const [showIndex, setShowIndex] = useState(false);
-    const [showBullets, setShowBullets] = useState(true);
-    const [showThumbnails, setShowThumbnails] = useState(true);
-    const [showFullscreenButton, setShowFullscreenButton] = useState(true);
-    const [showPlayButton, setShowPlayButton] = useState(true);
-    const [showNav, setShowNav] = useState(true);
-    const [slideDuration, setSlideDuration] = useState(450);
-    const [slideInterval, setSlideInterval] = useState(2000);
-    const [useWindowKeyDown, setUseWindowKeyDown] = useState(true);
+    const [showIndex] = useState(false);
+    const [showBullets] = useState(true);
+    const [showThumbnails] = useState(true);
+    const [showPlayButton] = useState(true);
+    const [showNav] = useState(true);
+    const [slideDuration] = useState(450);
+    const [slideInterval] = useState(2000);
 
 
     return (

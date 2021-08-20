@@ -1,39 +1,51 @@
-import React from 'react';
+import React, { SetStateAction } from 'react';
 import {
-  BrowserRouter, Link, Route, Switch
+  Route, Switch, useHistory
 } from "react-router-dom";
 import Menu from '../components/menu/Menu.component';
 import Home from '../components/home/Home.component';
 import Gallery from '../components/gallery/Gallery.component';
 import {Routes} from './Routes';
-import { AppBar, Tab, Toolbar } from '@material-ui/core';
+import { AppBar, Tab, Tabs } from '@material-ui/core';
 
-interface TabLinkProps {
+interface LinkTabProps {
   label: string,
   to: string
 }
 
 function Router() {
+  const history = useHistory();
+  const [value, setValue] = React.useState(0);
 
-  function TabLink(props: TabLinkProps) {
-    const { label, to } = props;
-  
-    const renderLink = React.useMemo(
-      () => React.forwardRef((itemProps, ref: any) => <Link to={to} ref={ref} {...itemProps} />),
-      [to],
+  function LinkTab(props: LinkTabProps) {
+    return (
+      <Tab
+        onClick={(event) => {
+          event.preventDefault();
+          history.push(props.to);
+        }}
+        {...props}
+      />
     );
-  
-    return <Tab label={label} component={renderLink} />;
   }
+
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
+    event.preventDefault();
+    setValue(newValue);
+  };
   
   return (
-    <BrowserRouter>
+    <>
       <AppBar position="static">
-        <Toolbar variant="dense">
-          <TabLink label="Home" to={Routes.home} /> 
-          <TabLink label="Menu" to={Routes.menu} /> 
-          <TabLink label="Gallery" to={Routes.gallery} /> 
-        </Toolbar>
+        <Tabs
+          variant="fullWidth"
+          value={value}
+          onChange={handleChange}
+        >
+          <LinkTab label="Home" to={Routes.home} />
+          <LinkTab label="Menu" to={Routes.menu} />
+          <LinkTab label="Gallery" to={Routes.gallery} />
+        </Tabs>
       </AppBar>
       
       <Switch>
@@ -46,9 +58,8 @@ function Router() {
         <Route path={Routes.home}>
           <Home/>
         </Route>
-
       </Switch>
-    </BrowserRouter>
+    </>
   );
 }
 
