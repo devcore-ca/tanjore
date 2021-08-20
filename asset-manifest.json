@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tanjore/static/css/main.d008f8f5.chunk.css",
+    "main.js": "/tanjore/static/js/main.92a7a93b.chunk.js",
+    "main.js.map": "/tanjore/static/js/main.92a7a93b.chunk.js.map",
+    "runtime-main.js": "/tanjore/static/js/runtime-main.32b8839d.js",
+    "runtime-main.js.map": "/tanjore/static/js/runtime-main.32b8839d.js.map",
+    "static/css/2.a4070788.chunk.css": "/tanjore/static/css/2.a4070788.chunk.css",
+    "static/js/2.15a68608.chunk.js": "/tanjore/static/js/2.15a68608.chunk.js",
+    "static/js/2.15a68608.chunk.js.map": "/tanjore/static/js/2.15a68608.chunk.js.map",
+    "index.html": "/tanjore/index.html",
+    "static/css/2.a4070788.chunk.css.map": "/tanjore/static/css/2.a4070788.chunk.css.map",
+    "static/css/main.d008f8f5.chunk.css.map": "/tanjore/static/css/main.d008f8f5.chunk.css.map",
+    "static/js/2.15a68608.chunk.js.LICENSE.txt": "/tanjore/static/js/2.15a68608.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32b8839d.js",
+    "static/css/2.a4070788.chunk.css",
+    "static/js/2.15a68608.chunk.js",
+    "static/css/main.d008f8f5.chunk.css",
+    "static/js/main.92a7a93b.chunk.js"
+  ]
+}
