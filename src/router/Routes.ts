@@ -3,7 +3,8 @@ const StaticRoutes = {
   menu: '/menu',
   About: '/About',
   settings: '/settings',
-  gallery: '/gallery'
+  gallery: '/gallery',
+  contact: '/contact'
 }
 
 export const Routes = {...StaticRoutes};

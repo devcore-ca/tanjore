@@ -5,6 +5,7 @@ import {
 import Menu from '../components/menu/Menu.component';
 import Home from '../components/home/Home.component';
 import Gallery from '../components/gallery/Gallery.component';
+import Contact from '../components/contact/Contact.component';
 import {Routes} from './Routes';
 import { AppBar, Tab, Tabs } from '@material-ui/core';
 import About from '../components/about/About.component';
@@ -47,7 +48,7 @@ function Router() {
           <LinkTab label="About Us" to={Routes.About}/>
           <LinkTab label="Menu" to={Routes.menu} />
           <LinkTab label="Gallery" to={Routes.gallery} />
-          
+          <LinkTab label="Contact" to={Routes.contact} />
         </Tabs>
       </AppBar>
       
@@ -60,6 +61,9 @@ function Router() {
         </Route>
         <Route path={Routes.gallery}>
           <Gallery/>
+        </Route>
+        <Route path={Routes.contact}>
+          <Contact/>
         </Route>
         <Route path={Routes.home}>
           <Home/>
