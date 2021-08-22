@@ -7,6 +7,7 @@ import Home from '../components/home/Home.component';
 import Gallery from '../components/gallery/Gallery.component';
 import {Routes} from './Routes';
 import { AppBar, Tab, Tabs } from '@material-ui/core';
+import About from '../components/about/About.component';
 
 interface LinkTabProps {
   label: string,
@@ -43,14 +44,19 @@ function Router() {
           onChange={handleChange}
         >
           <LinkTab label="Home" to={Routes.home} />
+          <LinkTab label="About Us" to={Routes.About}/>
           <LinkTab label="Menu" to={Routes.menu} />
           <LinkTab label="Gallery" to={Routes.gallery} />
+          
         </Tabs>
       </AppBar>
       
       <Switch>
         <Route path={Routes.menu}>
           <Menu/>
+        </Route>
+        <Route path={Routes.About}>
+          <About/>
         </Route>
         <Route path={Routes.gallery}>
           <Gallery/>
