@@ -1,18 +1,17 @@
-import React, { SetStateAction } from 'react';
-import {
-  Route, Switch, useHistory
-} from "react-router-dom";
-import Menu from '../components/menu/Menu.component';
-import Home from '../components/home/Home.component';
-import Gallery from '../components/gallery/Gallery.component';
-import Contact from '../components/contact/Contact.component';
-import {Routes} from './Routes';
-import { AppBar, Tab, Tabs } from '@material-ui/core';
-import About from '../components/about/About.component';
+import React, { SetStateAction } from "react";
+import { Route, Switch, useHistory } from "react-router-dom";
+import Menu from "../components/menu/Menu.component";
+import Home from "../components/home/Home.component";
+import About from "../components/about/About.component";
+import Gallery from "../components/gallery/Gallery.component";
+import Contact from "../components/contact/Contact.component";
+import { Routes } from "./Routes";
+import { AppBar, Tab, Tabs } from "@material-ui/core";
+import styles from "./Router.module.css";
 
 interface LinkTabProps {
-  label: string,
-  to: string
+  label: string;
+  to: string;
 }
 
 function Router() {
@@ -35,38 +34,38 @@ function Router() {
     event.preventDefault();
     setValue(newValue);
   };
-  
+
   return (
     <>
-      <AppBar position="static">
-        <Tabs
-          variant="fullWidth"
-          value={value}
-          onChange={handleChange}
-        >
-          <LinkTab label="Home" to={Routes.home} />
-          <LinkTab label="About Us" to={Routes.About}/>
+      <AppBar position="static" style={{ backgroundColor: "#FF8C42" }}>
+        <Tabs variant="fullWidth" value={value} onChange={handleChange}>
+          <div id="my-panel">
+            <LinkTab label="Home" to={Routes.home} />
+          </div>
+          <LinkTab label="About Us" to={Routes.About} />
           <LinkTab label="Menu" to={Routes.menu} />
           <LinkTab label="Gallery" to={Routes.gallery} />
           <LinkTab label="Contact" to={Routes.contact} />
         </Tabs>
       </AppBar>
-      
       <Switch>
         <Route path={Routes.menu}>
-          <Menu/>
+          <Menu />
         </Route>
         <Route path={Routes.About}>
-          <About/>
+          <About />
         </Route>
         <Route path={Routes.gallery}>
-          <Gallery/>
+          <Gallery />
         </Route>
         <Route path={Routes.contact}>
-          <Contact/>
+          <Contact />
+        </Route>
+        <Route path={Routes.contact}>
+          <Contact />
         </Route>
         <Route path={Routes.home}>
-          <Home/>
+          <Home />
         </Route>
       </Switch>
     </>

@@ -7,19 +7,23 @@
 .h1 {
   font-size: 30px;
   right: 100px;
+  padding-top: 5%;
 }
 
 .p {
-  width: 50%;
-  font-size: 30px;
+  width: 80%;
+  font-size: 25px;
 }
 
 .imageSize {
   width: 30%;
-  height: 30%;
+  height: 100%;
   margin-right: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 .flex {
   display: flex;
+  height: 50%;
 }
