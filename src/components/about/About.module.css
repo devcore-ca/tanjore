@@ -1,0 +1,25 @@
+.about {
+  width: 100%;
+  font-size: large;
+  color: red;
+}
+
+.h1 {
+  font-size: 30px;
+  right: 100px;
+}
+
+.p {
+  width: 50%;
+  font-size: 30px;
+}
+
+.imageSize {
+  width: 30%;
+  height: 30%;
+  margin-right: 5%;
+}
+
+.flex {
+  display: flex;
+}
