@@ -7,9 +7,9 @@ function Contact() {
   return (
     <>
       <img src={contact} style={{width: '100%', position: 'relative'}}/>
-      <Container maxWidth='lg'> 
-        <Grid container direction="row" justify="center" spacing={3}>
-          <Grid direction="column" xs={7} justify="center" > 
+      <Container maxWidth='lg' style={{display: "flex"}}> 
+        <Grid container direction="row" justify="center" spacing={3} >
+          <Grid direction="column" xs={7} justify="center" style={{marginTop: '5%'}}> 
             <h1>
               TANJORE INDIAN CUSINSE - BELLEVILLE
             </h1>
@@ -29,13 +29,20 @@ function Contact() {
               Tuesday - Sunday: 12:00 PM - 8:00 PM 
             </p>
           </Grid>
-          <Grid direction="column" xs={5} justify="center" >
-            <img src={maps} style={{width: '75%', position: 'relative'}}/>
+          <Grid direction="column" xs={5} justify="center" style={{marginTop: '5%'}}>
+            {/* <img src={maps} style={{width: '75%', position: 'relative'}}/> */}
+            <iframe
+              width="400"
+              height="400"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB4t2PtLtyUUM8OygsReCOzrhxXhB0Pas&q=Tanjore+North+Indian+Cuisine,Belleville+Ontario">
+            </iframe>
+            
           </Grid>
         </Grid>
       </Container>
     </>
   );
 }
+
 
 export default Contact;
