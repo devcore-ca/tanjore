@@ -1,0 +1,30 @@
+
+.image1{
+    width: 600px;
+    height:475px;
+  padding: "100px 0px 0px 165px";
+
+}
+.image2{
+    width: 600px;
+    height: 475px;
+    padding: "100px 50px 0px 105px";
+
+}
+
+.image1:hover{
+
+transform: scale(1.33);
+transition: transform .5s ease;
+}
+.image2:hover{
+    transform: scale(1.33);
+    transition: transform .5s ease;
+    
+}
+.footer{
+    padding-top: 220px;
+}
+
+
+

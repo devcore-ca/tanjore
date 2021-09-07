@@ -35,7 +35,7 @@ function Footer() {
           </a>
           <a href="https://www.instagram.com/tanjoreindiancuisine/?hl=en">
             <Fab size="small" className={classes.margin}>
-              <InstagramIcon />
+             <InstagramIcon />
             </Fab>
           </a>
         </div>
