@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './Gallery.module.css';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
+import Footer from '../footer/Footer';
 
 
 function  myRenderItem (imageUrl: string, title: string, description: string) {
@@ -10,7 +11,7 @@ function  myRenderItem (imageUrl: string, title: string, description: string) {
         <span className={styles.imageGalleryDescription}>
           {description}
         </span>
-    </div>;
+    </div>;    
 }
 
 const sourceImages = [
@@ -64,7 +65,8 @@ function Gallery() {
                 slideInterval={slideInterval}
                 slideDuration={slideDuration}
             />;
-        </div>
+            <Footer/>
+        </div>   
     );
 }
 

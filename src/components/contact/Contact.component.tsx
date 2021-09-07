@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import contact from './images/contact.png';
 import maps from './images/maps.png'
+import Footer from '../footer/Footer';
 
 function Contact() {
   return (
@@ -40,6 +41,7 @@ function Contact() {
           </Grid>
         </Grid>
       </Container>
+      <Footer/>
     </>
   );
 }
