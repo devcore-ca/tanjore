@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from './images/Menu1.png'; 
-import header from './images/Header.png';
-import img2 from './images/Menu2.png';
+import img1 from './images/menu1.png'; 
+import header from './images/header.png';
+import img2 from './images/menu2.png';
 import style from './Menu.module.css';
 import Footer from '../footer/Footer';
 
