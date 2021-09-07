@@ -27,15 +27,15 @@ function Footer() {
             Copyright © 2021 Tanjore Indian Restaurant
           </Typography>
           <a href="https://www.facebook.com/TanjoreIndianCuisine/" >
-                <Fab size="small" className={classes.margin}>
-                  <FacebookIcon />
-                </Fab>
-              </a>
-              <a href="https://www.instagram.com/tanjoreindiancuisine/?hl=en">
-                <Fab size="small" className={classes.margin}>
-                  <InstagramIcon />
-                </Fab>
-              </a>
+            <Fab size="small" className={classes.margin}>
+              <FacebookIcon />
+            </Fab>
+          </a>
+          <a href="https://www.instagram.com/tanjoreindiancuisine/?hl=en">
+            <Fab size="small" className={classes.margin}>
+              <InstagramIcon />
+            </Fab>
+          </a>
         </Toolbar>
       </Container>
     </AppBar>

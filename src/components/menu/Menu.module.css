@@ -1,0 +1,52 @@
+
+.menuHeader{
+    width: 100%;
+    position: relative;
+    
+}
+
+.menuImage1{
+    width:390%;
+    height:98%;
+    padding-left: 131.5%;
+}
+
+.menuImage1Div{
+    padding: 36% 0% 0% 60%;
+    position: relative;
+}
+
+.menuImage1:hover{
+    transform: scale(1.30);
+    transition: transform .5s ease;
+}
+
+.menuImage2{
+    width: 287%;
+    height: 81.5%;
+    padding: 42% 0% 0% 39%;
+}
+
+.menuImage2Div{
+    padding: 13.5% 40% 0% 6%;
+    position: relative;
+}
+
+.menuImage2:hover{
+    transform: scale(1.28);
+    transition: transform .5s ease;  
+}
+
+.footer{
+    padding-top: 13%;
+}
+
+.menuPageParentDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
