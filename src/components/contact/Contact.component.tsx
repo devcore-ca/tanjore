@@ -12,7 +12,7 @@ function Contact() {
         <Grid container direction="row" justify="center" spacing={3} >
           <Grid direction="column" xs={7} justify="center" style={{marginTop: '5%'}}> 
             <h1>
-              TANJORE INDIAN CUSINSE - BELLEVILLE
+              TANJORE INDIAN CUISINE - BELLEVILLE
             </h1>
             <p>
               151 Pinnacle St, Belleville, ON K8N 3A5
