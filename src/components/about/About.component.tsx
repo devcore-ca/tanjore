@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./About.module.css";
-import Footer from '../footer/Footer';
 
 function About() {
   return (
@@ -20,9 +19,7 @@ function About() {
           blandit aliquet accumsan.
         </p>
       </div>
-      <Footer/>
     </div>
-    <Footer/>
   );
 }
 

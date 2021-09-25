@@ -7,7 +7,7 @@ import Gallery from "../components/gallery/Gallery.component";
 import Contact from "../components/contact/Contact.component";
 import { Routes } from "./Routes";
 import { AppBar, Tab, Tabs } from "@material-ui/core";
-import styles from "./Router.module.css";
+import Footer from "../components/footer/Footer";
 
 interface LinkTabProps {
   label: string;
@@ -68,6 +68,7 @@ function Router() {
           <Home />
         </Route>
       </Switch>
+      <Footer/>
     </>
   );
 }
