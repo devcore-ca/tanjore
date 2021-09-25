@@ -39,9 +39,7 @@ function Router() {
     <>
       <AppBar position="static" style={{ backgroundColor: "#FF8C42" }}>
         <Tabs variant="fullWidth" value={value} onChange={handleChange}>
-          <div id="my-panel">
-            <LinkTab label="Home" to={Routes.home} />
-          </div>
+          <LinkTab label="Home" to={Routes.home} />
           <LinkTab label="About Us" to={Routes.About} />
           <LinkTab label="Menu" to={Routes.menu} />
           <LinkTab label="Gallery" to={Routes.gallery} />
@@ -57,9 +55,6 @@ function Router() {
         </Route>
         <Route path={Routes.gallery}>
           <Gallery />
-        </Route>
-        <Route path={Routes.contact}>
-          <Contact />
         </Route>
         <Route path={Routes.contact}>
           <Contact />
