@@ -34,6 +34,7 @@ function Contact() {
           >
             {/* <img src={maps} style={{width: '75%', position: 'relative'}}/> */}
             <iframe
+              title="maps"
               width="400"
               height="400"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB4t2PtLtyUUM8OygsReCOzrhxXhB0Pas&q=Tanjore+North+Indian+Cuisine,Belleville+Ontario"
