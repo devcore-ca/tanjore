@@ -6,8 +6,9 @@ import About from "../components/about/About.component";
 import Gallery from "../components/gallery/Gallery.component";
 import Contact from "../components/contact/Contact.component";
 import { Routes } from "./Routes";
-import { AppBar, Tab, Tabs } from "@material-ui/core";
+import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
 import Footer from "../components/footer/Footer";
+import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png"
 
 interface LinkTabProps {
   label: string;
@@ -21,6 +22,7 @@ function Router() {
   function LinkTab(props: LinkTabProps) {
     return (
       <Tab
+        style={{color: "black"}}
         onClick={(event) => {
           event.preventDefault();
           history.push(props.to);
@@ -37,14 +39,21 @@ function Router() {
 
   return (
     <>
-      <AppBar position="static" style={{ backgroundColor: "#FF8C42" }}>
-        <Tabs variant="fullWidth" value={value} onChange={handleChange}>
-          <LinkTab label="Home" to={Routes.home} />
-          <LinkTab label="About Us" to={Routes.About} />
-          <LinkTab label="Menu" to={Routes.menu} />
-          <LinkTab label="Gallery" to={Routes.gallery} />
-          <LinkTab label="Contact" to={Routes.contact} />
-        </Tabs>
+      <AppBar position="static" style={{ backgroundColor: "#FF8C42", width:"100%" }}>
+        <Toolbar style = {{width:"100%"}}>
+          <img src = {tanjoreLogo} style = {{width:"15%"}} onClick={(event) => {
+            event.preventDefault();
+            history.push('/home');
+          }}/>
+          <Tabs TabIndicatorProps={{style: {backgroundColor: "transparent"}}} variant="fullWidth" value={value} onChange={handleChange} style={{right: "10%", position: "absolute"}}>
+            <LinkTab label="Home" to={Routes.home}/>
+            <LinkTab label="About Us" to={Routes.About} />
+            <LinkTab label="Menu" to={Routes.menu} />
+            <LinkTab label="Gallery" to={Routes.gallery} />
+            <LinkTab label="Contact" to={Routes.contact} />
+          </Tabs>
+        </Toolbar>
+        
       </AppBar>
       <Switch>
         <Route path={Routes.menu}>
