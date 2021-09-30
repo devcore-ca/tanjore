@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
 function Footer() {
   const classes = useStyles()
   return (
-    <AppBar position="static" color="primary" style={{ backgroundColor: "#FF8C42" }}>
+    <AppBar position="static" color="primary" style={{ backgroundColor: "#FF8C42", bottom: 0 }}>
       <Container maxWidth="md">
         <Toolbar>
           <Typography variant="body1" color="inherit">
