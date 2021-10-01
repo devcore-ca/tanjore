@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import styles from "./Gallery.module.css";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import image1 from "../../common/images/IMG_1.png";
+import image2 from "../../common/images/IMG_2.png";
+import image3 from "../../common/images/IMG_3.png";
 
-function myRenderItem(imageUrl: string, title: string, description: string) {
+function myRenderItem(imageUrl: string, description: string) {
   return (
     <div className={styles.renderItemDiv}>
-      <img
-        className="image-gallery-image"
-        alt=""
-        src={imageUrl}
-        title={"Image Title"}
-      />
+      <img className="image-gallery-image" src={imageUrl} />
       <span className={styles.imageGalleryDescription}>{description}</span>
     </div>
   );
@@ -19,26 +17,23 @@ function myRenderItem(imageUrl: string, title: string, description: string) {
 
 const sourceImages = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-    description: "Description, making it longer",
+    original: image1,
+    description: "Authentic Tanjore Combo with Garlic Naan",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-    description: "Description",
+    original: image2,
+    description: "Biriyani",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-    description: "Description",
+    original: image3,
+    description: "Butter Paneer",
   },
 ];
 
 const images = sourceImages.map((image) => ({
   original: image.original,
-  thumbnail: image.thumbnail,
-  renderItem: () => myRenderItem(image.original, "Title", image.description),
+  thumbnail: image.original,
+  renderItem: () => myRenderItem(image.original, image.description),
 }));
 
 function Gallery() {
@@ -51,8 +46,8 @@ function Gallery() {
   const [slideInterval] = useState(2000);
 
   return (
-    <div className={styles.mainDiv}>
-      <div className={styles.galleryPage}>Tanjore Gallery</div>
+    <div>
+      {/* <div className={styles.galleryPage}>Tanjore Gallery</div> */}
       <ImageGallery
         items={images}
         showBullets={showBullets}
@@ -64,7 +59,6 @@ function Gallery() {
         slideInterval={slideInterval}
         slideDuration={slideDuration}
       />
-      ;
     </div>
   );
 }
