@@ -23,22 +23,22 @@ function About() {
 
       <div>
         <div className={styles.flex}>
-          <p className={styles.p}>
+          <p className={styles.p2}>
             In 2004, Rakesh finally decided he wanted to put his culinary skills
             to the test and he and his wife Neeru opened their very own little
             takeout restaurant called Tanjore Catering & Sweets. This quickly
             became a local favourite!
           </p>
           <div>
-            <img className={styles.imageSize} src={about1} alt=""></img>
+            <img className={styles.imageSize2} src={about1} alt=""></img>
           </div>
         </div>
       </div>
 
       <div className={styles.flex}>
-        <img className={styles.imageSize} src={about2} alt=""></img>
+        <img className={styles.imageSize3} src={about2} alt=""></img>
         <div>
-          <p className={styles.p}>
+          <p className={styles.p3}>
             Wanting to provide an authentic dine in experience, in 2017 they
             decided to take the leap and expand their restaurant to a larger
             location, providing a buffet style lunch 6 days a week. Customers
@@ -51,13 +51,13 @@ function About() {
 
       <div>
         <div className={styles.flex}>
-          <p className={styles.p}>
+          <p className={styles.p4}>
             Today, Tanjore is an admired family restaurant in Belleville, ON and
             even though we had to leave our dedicated customers in Scarborough,
             it definitely hasn’t stopped them from travelling here!
           </p>
           <div>
-            <img className={styles.imageSize} src={about3} alt=""></img>
+            <img className={styles.imageSize4} src={about3} alt=""></img>
           </div>
         </div>
       </div>
