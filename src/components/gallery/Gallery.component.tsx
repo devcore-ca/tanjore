@@ -5,6 +5,11 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import image1 from "../../common/images/IMG_1.png";
 import image2 from "../../common/images/IMG_2.png";
 import image3 from "../../common/images/IMG_3.png";
+import image4 from "../../common/images/IMG_4.png";
+import image5 from "../../common/images/IMG_5.png";
+import image6 from "../../common/images/IMG_6.png";
+import image7 from "../../common/images/IMG_7.png";
+import image8 from "../../common/images/IMG_8.png";
 
 function myRenderItem(imageUrl: string, description: string) {
   return (
@@ -27,6 +32,26 @@ const sourceImages = [
   {
     original: image3,
     description: "Butter Paneer",
+  },
+  {
+    original: image4,
+    description: "Chilli Chicken",
+  },
+  {
+    original: image5,
+    description: "Biriyani To Go",
+  },
+  {
+    original: image6,
+    description: "Delicious Chaat",
+  },
+  {
+    original: image7,
+    description: "Butter Chicken",
+  },
+  {
+    original: image8,
+    description: "Authentic Indian Snack",
   },
 ];
 
