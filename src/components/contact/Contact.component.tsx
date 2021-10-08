@@ -19,7 +19,7 @@ function Contact() {
             justify="center"
             style={{ marginTop: "5%" }}
           >
-            <h1>TANJORE INDIAN CUSINSE - BELLEVILLE</h1>
+            <h1>TANJORE INDIAN CUISINE - BELLEVILLE</h1>
             <p>151 Pinnacle St, Belleville, ON K8N 3A5</p>
             <p>(613) 967-5967</p>
             <h1>OPERATING HOURS</h1>
