@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import heropage from "./images/tanjoreCroppedLogo.png";
+import heropage from "./images/heroImage.png";
 import Gallery from "../gallery/Gallery.component";
 
 function Home() {
