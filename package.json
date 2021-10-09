@@ -2,7 +2,7 @@
   "name": "tanjore",
   "version": "0.1.0",
   "private": true,
-  "homepage": "tanjore.ca",
+  "homepage": "https://tanjore.ca",
   "dependencies": {
     "@material-ui/core": "4.12.2",
     "@material-ui/icons": "^4.11.2",
@@ -30,7 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
