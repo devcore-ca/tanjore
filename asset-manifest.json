@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tanjore/static/css/main.be3fe7dd.chunk.css",
-    "main.js": "/tanjore/static/js/main.79c5b957.chunk.js",
-    "main.js.map": "/tanjore/static/js/main.79c5b957.chunk.js.map",
+    "main.css": "/tanjore/static/css/main.0dfcd273.chunk.css",
+    "main.js": "/tanjore/static/js/main.54123605.chunk.js",
+    "main.js.map": "/tanjore/static/js/main.54123605.chunk.js.map",
     "runtime-main.js": "/tanjore/static/js/runtime-main.32b8839d.js",
     "runtime-main.js.map": "/tanjore/static/js/runtime-main.32b8839d.js.map",
     "static/css/2.6cd54866.chunk.css": "/tanjore/static/css/2.6cd54866.chunk.css",
@@ -10,13 +10,19 @@
     "static/js/2.12b26a2c.chunk.js.map": "/tanjore/static/js/2.12b26a2c.chunk.js.map",
     "index.html": "/tanjore/index.html",
     "static/css/2.6cd54866.chunk.css.map": "/tanjore/static/css/2.6cd54866.chunk.css.map",
-    "static/css/main.be3fe7dd.chunk.css.map": "/tanjore/static/css/main.be3fe7dd.chunk.css.map",
+    "static/css/main.0dfcd273.chunk.css.map": "/tanjore/static/css/main.0dfcd273.chunk.css.map",
     "static/js/2.12b26a2c.chunk.js.LICENSE.txt": "/tanjore/static/js/2.12b26a2c.chunk.js.LICENSE.txt",
     "static/media/IMG_1.b947e28d.png": "/tanjore/static/media/IMG_1.b947e28d.png",
     "static/media/IMG_2.2b9dba74.png": "/tanjore/static/media/IMG_2.2b9dba74.png",
     "static/media/IMG_3.d720fe85.png": "/tanjore/static/media/IMG_3.d720fe85.png",
+    "static/media/IMG_4.7faaa659.png": "/tanjore/static/media/IMG_4.7faaa659.png",
+    "static/media/IMG_5.848e1c79.png": "/tanjore/static/media/IMG_5.848e1c79.png",
+    "static/media/IMG_6.c22b7d1d.png": "/tanjore/static/media/IMG_6.c22b7d1d.png",
+    "static/media/IMG_7.c619efc9.png": "/tanjore/static/media/IMG_7.c619efc9.png",
+    "static/media/IMG_8.7bffe4b7.png": "/tanjore/static/media/IMG_8.7bffe4b7.png",
     "static/media/MenuHeader.fd089e2a.png": "/tanjore/static/media/MenuHeader.fd089e2a.png",
     "static/media/contact.0e325935.png": "/tanjore/static/media/contact.0e325935.png",
+    "static/media/heroImage.13aea5d8.png": "/tanjore/static/media/heroImage.13aea5d8.png",
     "static/media/menu1.0cb7b2a4.png": "/tanjore/static/media/menu1.0cb7b2a4.png",
     "static/media/menu2.de3f118a.png": "/tanjore/static/media/menu2.de3f118a.png",
     "static/media/rak.37dff6be.png": "/tanjore/static/media/rak.37dff6be.png",
@@ -29,7 +35,7 @@
     "static/js/runtime-main.32b8839d.js",
     "static/css/2.6cd54866.chunk.css",
     "static/js/2.12b26a2c.chunk.js",
-    "static/css/main.be3fe7dd.chunk.css",
-    "static/js/main.79c5b957.chunk.js"
+    "static/css/main.0dfcd273.chunk.css",
+    "static/js/main.54123605.chunk.js"
   ]
 }
