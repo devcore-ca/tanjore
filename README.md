@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 
 ## Deployment
 
-We use Github Pages for deployment. The site gets deployed at https://dev-corps.github.io/tanjore/
+We use Github Pages for deployment. The site gets deployed at tanjore.ca which points to devcore-ca.github.io
 
 Our deployment process is as follows:
 
