@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+Official Tanjore.ca Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tech Stack
+- React
+- React-Router
+- Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Hosted on Github Pages
 
-## Available Scripts
+## Local Development
 
 In the project directory, you can run:
 
