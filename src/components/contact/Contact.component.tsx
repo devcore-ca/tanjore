@@ -36,12 +36,12 @@ function Contact() {
             md={5}
             lg={5}
             justify="center"
-            style={{ marginTop: "5%" }}
+            style={{ marginTop: "5%", marginBottom: "5%" }}
           >
             <iframe
               title="maps"
               width="400"
-              height="425"
+              height="405"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB4t2PtLtyUUM8OygsReCOzrhxXhB0Pas&q=Tanjore+North+Indian+Cuisine,Belleville+Ontario"
             ></iframe>
           </Grid>
