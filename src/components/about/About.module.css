@@ -20,7 +20,6 @@
 .p3 {
   font-size: 25px;
   width: 100%;
-  justify-content: center;
 }
 
 .p4 {
@@ -45,4 +44,9 @@
 }
 .flex {
   display: flex;
+}
+
+.overWrite {
+  box-shadow: none !important;
+  grid-template-areas: none !important;
 }
