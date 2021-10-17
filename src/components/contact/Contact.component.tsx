@@ -32,7 +32,6 @@ function Contact() {
             justify="center"
             style={{ marginTop: "5%" }}
           >
-            {/* <img src={maps} style={{width: '75%', position: 'relative'}}/> */}
             <iframe
               title="maps"
               width="400"

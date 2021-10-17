@@ -10,13 +10,21 @@ import image5 from "../../common/images/IMG_5.png";
 import image6 from "../../common/images/IMG_6.png";
 import image7 from "../../common/images/IMG_7.png";
 import image8 from "../../common/images/IMG_8.png";
+import gallery from "./images/gallery.png";
 
 function myRenderItem(imageUrl: string, description: string) {
   return (
-    <div className={styles.renderItemDiv}>
-      <img className="image-gallery-image" src={imageUrl} />
-      <span className={styles.imageGalleryDescription}>{description}</span>
-    </div>
+    <>
+      <img
+        alt=""
+        src={gallery}
+        style={{ width: "100%", position: "relative" }}
+      />
+      <div className={styles.renderItemDiv}>
+        <img className="image-gallery-image" src={imageUrl} />
+        <span className={styles.imageGalleryDescription}>{description}</span>
+      </div>
+    </>
   );
 }
 
