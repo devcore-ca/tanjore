@@ -16,7 +16,7 @@ function Home() {
         />
       </div>
       <div>
-        <Gallery />
+        <Gallery rengerHeroImage={false}/>
       </div>
     </body>
   );
