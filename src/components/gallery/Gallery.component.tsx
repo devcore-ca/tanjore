@@ -12,19 +12,16 @@ import image7 from "../../common/images/IMG_7.png";
 import image8 from "../../common/images/IMG_8.png";
 import gallery from "./images/gallery.png";
 
+interface Props {
+  rengerHeroImage?: boolean;
+}
+
 function myRenderItem(imageUrl: string, description: string) {
   return (
-    <>
-      <img
-        alt=""
-        src={gallery}
-        style={{ width: "100%", position: "relative" }}
-      />
-      <div className={styles.renderItemDiv}>
-        <img className="image-gallery-image" src={imageUrl} />
-        <span className={styles.imageGalleryDescription}>{description}</span>
-      </div>
-    </>
+    <div className={styles.renderItemDiv}>
+      <img className="image-gallery-image" src={imageUrl} />
+      <span className={styles.imageGalleryDescription}>{description}</span>
+    </div>
   );
 }
 
@@ -69,7 +66,7 @@ const images = sourceImages.map((image) => ({
   renderItem: () => myRenderItem(image.original, image.description),
 }));
 
-function Gallery() {
+function Gallery({rengerHeroImage = true}: Props) {
   const [showIndex] = useState(false);
   const [showBullets] = useState(true);
   const [showThumbnails] = useState(true);
@@ -80,18 +77,24 @@ function Gallery() {
 
   return (
     <div>
-      {/* <div className={styles.galleryPage}>Tanjore Gallery</div> */}
+      { 
+        rengerHeroImage && <img
+          alt=""
+          src={gallery}
+          style={{ width: "100%", position: "relative" }}
+        /> 
+      }
       <ImageGallery
-        items={images}
-        showBullets={showBullets}
-        showIndex={showIndex}
-        showThumbnails={showThumbnails}
-        lazyLoad={true}
-        showPlayButton={showPlayButton}
-        showNav={showNav}
-        slideInterval={slideInterval}
-        slideDuration={slideDuration}
-      />
+      items={images}
+      showBullets={showBullets}
+      showIndex={showIndex}
+      showThumbnails={showThumbnails}
+      lazyLoad={true}
+      showPlayButton={showPlayButton}
+      showNav={showNav}
+      slideInterval={slideInterval}
+      slideDuration={slideDuration}
+    />
     </div>
   );
 }
