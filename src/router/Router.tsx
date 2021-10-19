@@ -65,7 +65,7 @@ function Router() {
               variant="fullWidth"
               value={value}
               onChange={handleChange}
-              style={{ right: "10%", position: "absolute", width: "75%" }}
+              style={{ right: "10%", position: "absolute", width: "80%" }}
             >
               <LinkTab label="Home" to={Routes.home} />
               <LinkTab label="About Us" to={Routes.About} />
