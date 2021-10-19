@@ -9,6 +9,7 @@ import { Routes } from "./Routes";
 import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
 import Footer from "../components/footer/Footer";
 import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png";
+import Grid from "@mui/material/Grid";
 
 interface LinkTabProps {
   label: string;
@@ -43,29 +44,37 @@ function Router() {
         position="static"
         style={{ backgroundColor: "#FFFFFF", width: "100%" }}
       >
-        <Toolbar style={{ width: "100%" }}>
-          <img
-            src={tanjoreLogo}
-            style={{ width: "15%" }}
-            onClick={(event) => {
-              event.preventDefault();
-              history.push("/home");
-            }}
-          />
-          <Tabs
-            TabIndicatorProps={{ style: { backgroundColor: "transparent" } }}
-            variant="fullWidth"
-            value={value}
-            onChange={handleChange}
-            style={{ right: "10%", position: "absolute" }}
-          >
-            <LinkTab label="Home" to={Routes.home} />
-            <LinkTab label="About Us" to={Routes.About} />
-            <LinkTab label="Menu" to={Routes.menu} />
-            <LinkTab label="Gallery" to={Routes.gallery} />
-            <LinkTab label="Contact" to={Routes.contact} />
-          </Tabs>
-        </Toolbar>
+        <Grid>
+          <Toolbar style={{ width: "100%" }}>
+            <img
+              src={tanjoreLogo}
+              style={{
+                width: "20%",
+                paddingRight: "10px",
+              }}
+              onClick={(event) => {
+                event.preventDefault();
+                history.push("/home");
+              }}
+            />
+
+            <Tabs
+              TabIndicatorProps={{
+                style: { backgroundColor: "transparent" },
+              }}
+              variant="fullWidth"
+              value={value}
+              onChange={handleChange}
+              style={{ right: "10%", position: "absolute", width: "75%" }}
+            >
+              <LinkTab label="Home" to={Routes.home} />
+              <LinkTab label="About Us" to={Routes.About} />
+              <LinkTab label="Menu" to={Routes.menu} />
+              <LinkTab label="Gallery" to={Routes.gallery} />
+              <LinkTab label="Contact" to={Routes.contact} />
+            </Tabs>
+          </Toolbar>
+        </Grid>
       </AppBar>
       <Switch>
         <Route path={Routes.menu}>
