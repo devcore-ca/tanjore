@@ -1,4 +1,5 @@
 import React, { SetStateAction } from "react";
+import styles from "./Router.module.css";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Menu from "../components/menu/Menu.component";
 import Home from "../components/home/Home.component";
@@ -24,6 +25,7 @@ function Router() {
     return (
       <Tab
         style={{ color: "black" }}
+        className={styles.tab}
         onClick={(event) => {
           event.preventDefault();
           history.push(props.to);
@@ -65,7 +67,7 @@ function Router() {
               variant="fullWidth"
               value={value}
               onChange={handleChange}
-              style={{ right: "10%", position: "absolute", width: "80%" }}
+              style={{ right: "10%", position: "absolute", width: "75%" }}
             >
               <LinkTab label="Home" to={Routes.home} />
               <LinkTab label="About Us" to={Routes.About} />

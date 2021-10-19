@@ -2,6 +2,9 @@
   background-color: #ff8c42;
 }
 
-#my-panel:hover * {
+.tab:hover * {
   text-emphasis-color: rgb(231, 231, 10);
+}
+.tab {
+  color: "black" !important;
 }
