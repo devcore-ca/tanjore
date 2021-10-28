@@ -6,7 +6,7 @@ import About from "../components/about/About.component";
 import Gallery from "../components/gallery/Gallery.component";
 import Contact from "../components/contact/Contact.component";
 import { Routes } from "./Routes";
-import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
+import { AppBar, Tab, Tabs, Toolbar } from "@material-ui/core";
 import Footer from "../components/footer/Footer";
 import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png";
 import Grid from "@mui/material/Grid";
@@ -67,7 +67,6 @@ function Router() {
               onChange={handleChange}
               style={{ right: "10%", position: "absolute", width: "80%" }}
             >
-              <LinkTab label="Home" to={Routes.home} />
               <LinkTab label="About Us" to={Routes.About} />
               <LinkTab label="Menu" to={Routes.menu} />
               <LinkTab label="Gallery" to={Routes.gallery} />
