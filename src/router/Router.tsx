@@ -68,9 +68,8 @@ function Router() {
               onChange={handleChange}
               style={{ right: "10%", position: "absolute", width: "75%" }}
             >
-              <div className={styles.Tab}>
-                <LinkTab label="Home" to={Routes.home} />
-              </div>
+              <LinkTab label="Home" to={Routes.home} />
+
               <LinkTab label="About Us" to={Routes.About} />
               <LinkTab label="Menu" to={Routes.menu} />
               <LinkTab label="Gallery" to={Routes.gallery} />
