@@ -6,8 +6,13 @@ import About from "../components/about/About.component";
 import Gallery from "../components/gallery/Gallery.component";
 import Contact from "../components/contact/Contact.component";
 import { Routes } from "./Routes";
+<<<<<<< HEAD
 import { AppBar, Tab, Tabs, Toolbar } from "@material-ui/core";
 import Footer from "../components/footer/Footer";
+=======
+import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
+import Footer from "../components/footer/Footer.component";
+>>>>>>> cb180c0b (Footer fixed and dishes header added)
 import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png";
 import Grid from "@mui/material/Grid";
 
