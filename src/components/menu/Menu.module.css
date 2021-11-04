@@ -14,22 +14,12 @@
 
 }
 
-.menuImage1:hover{
-    transform: scale(1.25);
-    transition: .5s ease;
-}
-
 .menuImage2{
     width: 70%;
     height: 40%;
     padding-left: 14.5%;
     padding-top: 10%;
     
-}
-
-.menuImage2:hover{
-    transform: scale(1.25);
-    transition: transform .5s ease; 
 }
 
 .footer{

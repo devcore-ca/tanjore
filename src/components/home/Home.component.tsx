@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import heropage from "./images/heroImage.png";
 import Gallery from "../gallery/Gallery.component";
+import { fontFamily } from "@mui/system";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
           }}
         />
       </div>
+      <h1 style={{ textAlign: "center"}}>OUR TOP DISHES</h1>
       <div>
         <Gallery rengerHeroImage={false}/>
       </div>
