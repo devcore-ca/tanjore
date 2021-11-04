@@ -25,7 +25,6 @@ function Router() {
     return (
       <Tab
         style={{ color: "black" }}
-        className={styles.tab}
         onClick={(event) => {
           event.preventDefault();
           history.push(props.to);
@@ -69,7 +68,9 @@ function Router() {
               onChange={handleChange}
               style={{ right: "10%", position: "absolute", width: "75%" }}
             >
-              <LinkTab label="Home" to={Routes.home} />
+              <div className={styles.Tab}>
+                <LinkTab label="Home" to={Routes.home} />
+              </div>
               <LinkTab label="About Us" to={Routes.About} />
               <LinkTab label="Menu" to={Routes.menu} />
               <LinkTab label="Gallery" to={Routes.gallery} />

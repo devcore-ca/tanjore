@@ -1,10 +1,14 @@
-.nav {
+.nav button:hover {
   background-color: #ff8c42;
 }
 
-.tab:hover * {
+.tab button:hover {
   text-emphasis-color: rgb(231, 231, 10);
 }
-.tab {
+.Tab button:hover {
   color: "black" !important;
+}
+.Tab:hover {
+  color: "red";
+  text-decoration: "underline";
 }
