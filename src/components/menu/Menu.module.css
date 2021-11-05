@@ -13,10 +13,12 @@
    padding-top: 10%;
 
 }
-
-.menuImage1:hover{
-    transform: scale(1.25);
-    transition: .5s ease;
+.menuImageLightBox{
+    width: 65%;
+    height: 50%;
+    padding-left: 19.5%;
+    
+    
 }
 
 .menuImage2{
@@ -27,15 +29,44 @@
     
 }
 
-.menuImage2:hover{
-    transform: scale(1.25);
-    transition: transform .5s ease; 
-}
-
 .footer{
     padding-top: 13%;
 }
 
+.boxStyle {
+    position: 'absolute';
+    top: '50%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    width: 400;
+    background-color: 'background.paper';
+    border: '2px solid #000';
+    box-shadow: 24;
+    
+  }
+
+  .menu1Button{
+    position: absolute;
+    z-index: 10;
+    left: 10% ;
+    top: 140px;
+    background-color: #FF8C42 ;
+    width: 7%;
+    height: 5%;
+  }
+  .menu2Button{
+    position: absolute;
+    z-index: 10;
+    left: 10%;
+    top: 140px;
+    background-color: #FF8C42 ;
+    width: 7%;
+    height: 5%;
+  }
+
+  .modalPrevButton{
+      top: 500px;
+  }
 
 
 
