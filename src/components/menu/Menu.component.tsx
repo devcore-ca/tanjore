@@ -1,76 +1,59 @@
 import React from "react";
-import Menu1 from './images/menu1.png'; 
-import Header from './images/MenuHeader.png';
-import Menu2 from './images/menu2.png';
-import style from './Menu.module.css';
-import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Menu1 from "./images/menu1.png";
+import Header from "./images/MenuHeader.png";
+import Menu2 from "./images/menu2.png";
+import style from "./Menu.module.css";
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
 
-
- function Menu() {
+function Menu() {
   const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
   const handleOpen = () => setOpen(true);
+  const handleOpen2 = () => setOpen2(true);
   const handleClose = () => setOpen(false);
+  const handleClose2 = () => setOpen2(false);
   return (
+    <body>
+      <img src={Header} alt="banner" className={style.menuHeader} />
 
-  <body>
+      <div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modalMenu1"
+          aria-describedby="modalMenu1des"
+        >
+          <Box className={style.boxStyle}>
+            <img alt="menu1" src={Menu1} className={style.menuImageLightBox} />
+          </Box>
+        </Modal>
+      </div>
 
-  <img src = {Header} className = {style.menuHeader}/>
-  
-  <div>
+      <img
+        alt="menu1"
+        src={Menu1}
+        className={style.menuImage2}
+        onClick={handleOpen}
+      />
 
-  <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modalMenu1"
-        aria-describedby="modalMenu1des"
-      >
-       <Box className = {style.boxStyle}>
-       <Typography id="modalMenu1" color = "white"  >
-           Menu Image 11111111111111111111111
-           <Button>
-             Prev
-           </Button>
-         </Typography>
-         <Typography id="modalMenu1des" >
-           <img src = {Menu2} className = {style.menuImageLightBox} />
-         </Typography>
-         </Box> 
-      </Modal>
-  </div>
+      <div>
+        <Modal
+          open={open2}
+          onClose={handleClose2}
+          aria-labelledby="modalMenu2"
+          aria-describedby="modalMenu2des"
+        >
+          <Box className={style.boxStyle}>
+            <img alt="menu2" src={Menu2} className={style.menuImageLightBox} />
+          </Box>
+        </Modal>
+      </div>
 
-      <img src = {Menu2} className = {style.menuImage2} onClick = {handleOpen}/>
-      
-
- <div>
- <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modalMenu2"
-        aria-describedby="modalMenu2des"
-      >
-       <Box className = {style.boxStyle}>
-       <Typography id="modalMenu2" color = "white"  >
-           Menu Image 2
-           <Button className = {style.modalNextButton}>
-             Prev
-           </Button>
-         </Typography>
-         <Typography id="modalMenu2des" >
-           <img src = {Menu1} className = {style.menuImageLightBox} />
-         </Typography>
-         </Box> 
-      </Modal>
-  </div>
- 
-      <a onClick = {handleOpen}>
-      <img src = {Menu1} className = {style.menuImage1}/>
-      </a>
-    
-  </body>
-
+      <button onClick={handleOpen2}>
+        <img alt="menu2" src={Menu2} className={style.menuImage1} />
+      </button>
+    </body>
   );
 }
 export default Menu;
