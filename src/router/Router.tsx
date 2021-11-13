@@ -3,7 +3,7 @@ import { Route, Switch, useHistory } from "react-router-dom";
 import Menu from "../components/menu/Menu.component";
 import Home from "../components/home/Home.component";
 import About from "../components/about/About.component";
-import Gallery from "../components/gallery/Gallery.component";
+import SwiperGallery from "../components/gallery/SwiperGallery.component";
 import Contact from "../components/contact/Contact.component";
 import { Routes } from "./Routes";
 import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
@@ -83,7 +83,7 @@ function Router() {
           <About />
         </Route>
         <Route path={Routes.gallery}>
-          <Gallery />
+          <SwiperGallery />
         </Route>
         <Route path={Routes.contact}>
           <Contact />
