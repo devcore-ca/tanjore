@@ -5,6 +5,7 @@ import Menu2 from "./images/menu2.png";
 import style from "./Menu.module.css";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
+import Button from '@mui/material/Button';
 
 function Menu() {
   const [open, setOpen] = React.useState(false);
@@ -19,13 +20,40 @@ function Menu() {
 
       <div>
         <Modal
+          open={open2}
+          onClose={handleClose2}
+          aria-labelledby="modalMenu2"
+          aria-describedby="modalMenu2des"
+        >
+          <Box className={style.boxStyle}>
+            <Button variant = "text" onClick = {handleClose2} className = {style.menuLightBoxCloseButton}>
+              Close
+            </Button>
+            <img alt="menu2" src={Menu2} className={style.menuImageLightBox1} />
+          </Box>
+        </Modal>
+      </div>
+
+      
+        <img 
+        alt="menu2" 
+        src={Menu2} 
+        className={style.menuImage2} 
+        onClick={handleOpen2} 
+        />
+
+        <div>
+        <Modal
           open={open}
           onClose={handleClose}
           aria-labelledby="modalMenu1"
           aria-describedby="modalMenu1des"
         >
           <Box className={style.boxStyle}>
-            <img alt="menu1" src={Menu1} className={style.menuImageLightBox} />
+          <Button variant = "text" onClick = {handleClose} className = {style.menuLightBoxCloseButton}>
+              Close
+            </Button>
+            <img alt="menu1" src={Menu1} className={style.menuImageLightBox2} />
           </Box>
         </Modal>
       </div>
@@ -33,27 +61,12 @@ function Menu() {
       <img
         alt="menu1"
         src={Menu1}
-        className={style.menuImage2}
+        className={style.menuImage1}
         onClick={handleOpen}
       />
-
-      <div>
-        <Modal
-          open={open2}
-          onClose={handleClose2}
-          aria-labelledby="modalMenu2"
-          aria-describedby="modalMenu2des"
-        >
-          <Box className={style.boxStyle}>
-            <img alt="menu2" src={Menu2} className={style.menuImageLightBox} />
-          </Box>
-        </Modal>
-      </div>
-
-      <button onClick={handleOpen2}>
-        <img alt="menu2" src={Menu2} className={style.menuImage1} />
-      </button>
+      
     </body>
   );
 }
 export default Menu;
+
