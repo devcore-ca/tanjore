@@ -55,11 +55,13 @@
 
 .menuLightBoxCloseButton{
     
-
-    position: relative;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
+    border-radius: 60% !important;
+    font-size: 110% !important;
+    position: absolute !important; 
+    right: 3vw;
+    top: 2vh;
+    
+    
     
 }
 
