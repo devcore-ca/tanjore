@@ -1,5 +1,12 @@
 .nav {
-  background-color: #ff8c42;
+  background-color: transparent;
+ 
+
+}
+
+.nav:hover{
+  background-color: orange;
+
 }
 
 #my-panel:hover * {
