@@ -1,7 +1,7 @@
 import React from "react";
-import Menu1 from "./images/menu1.png";
+import updatedMenuImage1 from "./images/updatedMenuImage1.png";
 import Header from "./images/MenuHeader.png";
-import Menu2 from "./images/menu2.png";
+import updatedMenuImage2 from "./images/updatedMenuImage2.png";
 import style from "./Menu.module.css";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
@@ -45,14 +45,14 @@ function Menu() {
             <Button variant = "text" onClick = {handleClose2} sx = {styles} className = {style.menuLightBoxCloseButton}>
               X
             </Button>
-            <img alt="menu2" src={Menu2} className={style.menuImageLightBox1} />
+            <img alt="menu2" src={updatedMenuImage2} className={style.menuImageLightBox1} />
           </Box>
         </Modal>
       </div>
 
         <img 
         alt="menu2" 
-        src={Menu2} 
+        src={updatedMenuImage2} 
         className={style.menuImage2} 
         onClick={handleOpen2} 
         />
@@ -68,14 +68,14 @@ function Menu() {
           <Button variant = "text" onClick = {handleClose} sx = {styles} className = {style.menuLightBoxCloseButton}>
               X
             </Button>
-            <img alt="menu1" src={Menu1} className={style.menuImageLightBox2} />
+            <img alt="menu1" src={updatedMenuImage1} className={style.menuImageLightBox2} />
           </Box>
         </Modal>
       </div>
 
       <img
         alt="menu1"
-        src={Menu1}
+        src={updatedMenuImage1}
         className={style.menuImage1}
         onClick={handleOpen}
       />

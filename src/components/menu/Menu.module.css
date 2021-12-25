@@ -41,21 +41,20 @@
 .menuImageLightBox1{
     width: 66%;
     height: 50%;
-    padding-left: 11%;
+    padding-left: 17%;
     padding-top: 1%;
     
 }
 .menuImageLightBox2{
     width: 66%;
     height: 50%;
-    padding-left: 11%;
+    padding-left: 17%;
     padding-top: 1%;
     
 }
 
 .menuLightBoxCloseButton{
     
-    border-radius: 60% !important;
     font-size: 110% !important;
     position: absolute !important; 
     right: 3vw;
