@@ -1,6 +1,11 @@
 .nav {
+  background-color: transparent;
+}
+
+.nav:hover {
   background-color: #ff8c42;
 }
+
 
 #my-panel:hover * {
   text-emphasis-color: rgb(231, 231, 10);
