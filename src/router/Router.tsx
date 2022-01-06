@@ -10,10 +10,12 @@ import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
 import Footer from "../components/footer/Footer.component";
 import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png";
 import Grid from "@mui/material/Grid";
+import styles from "./Router.module.css";
 
 interface LinkTabProps {
   label: string;
   to: string;
+  
 }
 
 function Router() {
@@ -23,6 +25,7 @@ function Router() {
   function LinkTab(props: LinkTabProps) {
     return (
       <Tab
+      className= {styles.nav}
         style={{ color: "black" }}
         onClick={(event) => {
           event.preventDefault();
@@ -50,7 +53,7 @@ function Router() {
               src={tanjoreLogo}
               style={{
                 width: "20%",
-                paddingRight: "10px",
+                marginRight: "0px",
               }}
               onClick={(event) => {
                 event.preventDefault();
@@ -65,7 +68,7 @@ function Router() {
               variant="fullWidth"
               value={value}
               onChange={handleChange}
-              style={{ right: "10%", position: "absolute", width: "80%" }}
+              style={{ right: "5%", position: "absolute", width: "80%" }}
             >
               <LinkTab label="About Us" to={Routes.About} />
               <LinkTab label="Menu" to={Routes.menu} />
