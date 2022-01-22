@@ -42,7 +42,7 @@ function Menu() {
           aria-describedby="modalMenu2des"
         >
           <Box className={style.boxStyle}>
-            <Button variant = "text" onClick = {handleClose2} sx = {styles} className = {style.menuLightBoxCloseButton}>
+            <Button variant="text" onClick={handleClose2} sx={styles} className={style.menuLightBoxCloseButton}>
               X
             </Button>
             <img alt="menu2" src={updatedMenuImage2} className={style.menuImageLightBox1} />
@@ -50,14 +50,14 @@ function Menu() {
         </Modal>
       </div>
 
-        <img 
-        alt="menu2" 
-        src={updatedMenuImage2} 
-        className={style.menuImage2} 
-        onClick={handleOpen2} 
-        />
+      <img
+        alt="menu2"
+        src={updatedMenuImage2}
+        className={style.menuImage2}
+        onClick={handleOpen2}
+      />
 
-        <div>
+      <div>
         <Modal
           open={open}
           onClose={handleClose}
@@ -65,7 +65,7 @@ function Menu() {
           aria-describedby="modalMenu1des"
         >
           <Box className={style.boxStyle}>
-          <Button variant = "text" onClick = {handleClose} sx = {styles} className = {style.menuLightBoxCloseButton}>
+            <Button variant="text" onClick={handleClose} sx={styles} className={style.menuLightBoxCloseButton}>
               X
             </Button>
             <img alt="menu1" src={updatedMenuImage1} className={style.menuImageLightBox2} />
@@ -79,7 +79,7 @@ function Menu() {
         className={style.menuImage1}
         onClick={handleOpen}
       />
-      
+
     </body>
   );
 }
