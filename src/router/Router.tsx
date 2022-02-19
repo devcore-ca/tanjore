@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { SetStateAction } from "react";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Menu from "../components/menu/Menu.component";
@@ -15,7 +17,6 @@ import styles from "./Router.module.css";
 interface LinkTabProps {
   label: string;
   to: string;
-  
 }
 
 function Router() {
@@ -25,7 +26,7 @@ function Router() {
   function LinkTab(props: LinkTabProps) {
     return (
       <Tab
-      className= {styles.nav}
+        className={styles.nav}
         style={{ color: "black" }}
         onClick={(event) => {
           event.preventDefault();
@@ -78,23 +79,26 @@ function Router() {
           </Toolbar>
         </Grid>
       </AppBar>
-      <Switch>
-        <Route path={Routes.menu}>
-          <Menu />
-        </Route>
-        <Route path={Routes.About}>
-          <About />
-        </Route>
-        <Route path={Routes.gallery}>
-          <SwiperGallery />
-        </Route>
-        <Route path={Routes.contact}>
-          <Contact />
-        </Route>
-        <Route path={Routes.home}>
-          <Home />
-        </Route>
-      </Switch>
+      <div style={{ minHeight: "90vh" }}>
+        <Switch>
+          <Route path={Routes.menu}>
+            <Menu />
+          </Route>
+          <Route path={Routes.About}>
+            <About />
+          </Route>
+          <Route path={Routes.gallery}>
+            <SwiperGallery />
+          </Route>
+          <Route path={Routes.contact}>
+            <Contact />
+          </Route>
+          <Route path={Routes.home}>
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+
       <Footer />
     </>
   );
