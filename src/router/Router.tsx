@@ -49,7 +49,7 @@ function Router() {
         style={{ backgroundColor: "#FFFFFF", width: "100%" }}
       >
         <Grid>
-          <Toolbar style={{ width: "100%" }}>
+          <Toolbar >
             <img
               src={tanjoreLogo}
               style={{

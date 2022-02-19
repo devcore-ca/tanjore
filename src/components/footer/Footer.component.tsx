@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     toolbar: {
       background: "#FF8C42",
-      width: "100vw",
     },
     Right: {
       alignContent: "right",
