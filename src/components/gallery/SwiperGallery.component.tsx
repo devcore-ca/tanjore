@@ -22,6 +22,10 @@ import image8 from "../../common/images/IMG_8.png";
 
 const sourceImages = [
   {
+    original: image4,
+    description: "Chilli Chicken",
+  },
+  {
     original: image1,
     description: "Authentic Tanjore Combo with Garlic Naan",
   },
@@ -32,10 +36,6 @@ const sourceImages = [
   {
     original: image3,
     description: "Butter Paneer",
-  },
-  {
-    original: image4,
-    description: "Chilli Chicken",
   },
   {
     original: image5,
