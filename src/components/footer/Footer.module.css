@@ -1,6 +1,15 @@
+/** @format */
+
 .footer {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
+  display: flex;
+  position: relative;
+}
+.footerLeft {
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+#Right {
+  display: flex;
+  justify-content: flex-end !important;
 }
