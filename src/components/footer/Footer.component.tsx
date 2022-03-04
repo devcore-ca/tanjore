@@ -17,9 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     toolbar: {
       background: "#FF8C42",
-    },
-    Right: {
-      alignContent: "right",
+      justifyContent: "space-between",
     },
   })
 );
@@ -33,10 +31,10 @@ function Footer() {
           Copyright © 2021 Tanjore Indian Cuisine | Website by Devcore Inc.
         </Typography>
       </div>
-      <div id="Right">
+      <div>
         <a href="https://www.facebook.com/TanjoreIndianCuisine/">
           <Fab size="small" className={classes.icons}>
-            <FacebookIcon className={classes.Right} />
+            <FacebookIcon />
           </Fab>
         </a>
         <a href="https://www.instagram.com/tanjoreindiancuisine/?hl=en">
