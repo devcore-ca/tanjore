@@ -97,7 +97,6 @@ function Router() {
                 color="inherit"
               >
                 <MenuIcon style={{ color: "black" }} />
-                {/* <Avatar alt="Tanjore Logo" src={tanjoreLogo} /> */}
               </IconButton>
               <Menu
                 id="menu-appbar"
