@@ -17,6 +17,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
+import MenuIcon from "@mui/icons-material/Menu";
 
 import Footer from "../components/footer/Footer.component";
 import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png";
@@ -95,7 +96,8 @@ function Router() {
                 onClick={handleOpenNavMenu}
                 color="inherit"
               >
-                <Avatar alt="Tanjore Logo" src={tanjoreLogo} />
+                <MenuIcon style={{ color: "black" }} />
+                {/* <Avatar alt="Tanjore Logo" src={tanjoreLogo} /> */}
               </IconButton>
               <Menu
                 id="menu-appbar"
