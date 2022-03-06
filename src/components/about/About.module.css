@@ -17,31 +17,19 @@
   width: 100%;
 }
 
-.p3 {
-  font-size: 25px;
-  width: 100%;
-}
-
-.p4 {
-  font-size: 25px;
-  width: 100%;
-}
-
 .imageSize {
-  width: 100%;
+  width: 90%;
+  box-shadow: 10px 10px orange;
+  border: black solid 10px;
 }
 
-.imageSize2 {
+.horizontalImage {
   width: 100%;
+  box-shadow: 10px 10px orange;
+  border: black solid 10px;
 }
 
-.imageSize3 {
-  width: 100%;
-}
 
-.imageSize4 {
-  width: 100%;
-}
 .flex {
   display: flex;
 }
@@ -49,4 +37,8 @@
 .overWrite {
   box-shadow: none !important;
   grid-template-areas: none !important;
+}
+
+.aboutUsContainer {
+  padding: 5%;
 }

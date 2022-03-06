@@ -26,7 +26,7 @@ function About() {
         style={{ width: "100%", position: "relative" }}
       />
 
-      <div>
+      <div className={styles.aboutUsContainer}>
         <Grid
           container
           spacing={2}
@@ -66,7 +66,7 @@ function About() {
 
           <Grid item xs={12} sm={12} md={6} lg={6}>
             <Item className={styles.overWrite}>
-              <img className={styles.imageSize2} src={about1} alt=""></img>
+              <img className={styles.imageSize} src={about1} alt=""></img>
             </Item>
           </Grid>
         </Grid>
@@ -80,13 +80,9 @@ function About() {
             lg={12}
             className={styles.overWrite}
           >
-            <Item className={styles.overWrite}>
-              <img className={styles.imageSize3} src={about2} alt=""></img>
-            </Item>
-          </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Item className={styles.overWrite}>
-              <p className={styles.p3}>
+              <p className={styles.p2}>
                 Wanting to provide an authentic dine in experience, in 2017 they
                 decided to take the leap and expand their restaurant to a larger
                 location, providing a buffet style lunch 6 days a week.
@@ -97,12 +93,16 @@ function About() {
               </p>
             </Item>
           </Grid>
+            <Item className={styles.overWrite}>
+              <img className={styles.horizontalImage} src={about2} alt=""></img>
+            </Item>
+          </Grid>
         </Grid>
 
         <Grid>
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Item className={styles.overWrite}>
-              <p className={styles.p4}>
+              <p className={styles.p2}>
                 Today, Tanjore is an admired family restaurant in Belleville, ON
                 and even though we had to leave our dedicated customers in
                 Scarborough, it definitely hasn’t stopped them from travelling
@@ -112,7 +112,7 @@ function About() {
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12}>
             <Item className={styles.overWrite}>
-              <img className={styles.imageSize4} src={about3} alt=""></img>
+              <img className={styles.horizontalImage} src={about3} alt=""></img>
             </Item>
           </Grid>
         </Grid>
