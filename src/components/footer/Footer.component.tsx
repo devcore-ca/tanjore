@@ -28,7 +28,7 @@ function Footer() {
     <Toolbar className={classes.toolbar}>
       <div>
         <Typography variant="body1" color="inherit">
-          Copyright © 2021 Tanjore Indian Cuisine | Website by Devcore Inc.
+          Copyright © 2024 Tanjore Indian Cuisine | Website by Janac.me
         </Typography>
       </div>
       <div>
