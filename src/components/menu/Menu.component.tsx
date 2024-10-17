@@ -1,7 +1,7 @@
 import React from "react";
-import updatedMenuImage1 from "./images/updatedMenuImage1.png";
 import Header from "./images/MenuHeader.png";
-import updatedMenuImage2 from "./images/updatedMenuImage2.png";
+import menuImage1 from "./images/menuImage1.jpg";
+import menuImage2 from "./images/menuImage2.jpg";
 import style from "./Menu.module.css";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
@@ -51,7 +51,7 @@ function Menu() {
             </Button>
             <img
               alt="menu2"
-              src={updatedMenuImage2}
+              src={menuImage2}
               className={style.menuImageLightBox1}
             />
           </Box>
@@ -60,7 +60,7 @@ function Menu() {
 
       <img
         alt="menu2"
-        src={updatedMenuImage2}
+        src={menuImage2}
         className={style.menuImage2}
         onClick={handleOpen2}
       />
@@ -83,7 +83,7 @@ function Menu() {
             </Button>
             <img
               alt="menu1"
-              src={updatedMenuImage1}
+              src={menuImage1}
               className={style.menuImageLightBox2}
             />
           </Box>
@@ -92,7 +92,7 @@ function Menu() {
 
       <img
         alt="menu1"
-        src={updatedMenuImage1}
+        src={menuImage1}
         className={style.menuImage1}
         onClick={handleOpen}
       />
