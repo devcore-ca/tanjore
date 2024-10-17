@@ -8,7 +8,7 @@ import About from "../components/about/About.component";
 import SwiperGallery from "../components/gallery/SwiperGallery.component";
 import Contact from "../components/contact/Contact.component";
 import { Routes } from "./Routes";
-import { AppBar, makeStyles, Tab, Tabs, Toolbar } from "@material-ui/core";
+import { AppBar, Tab, Tabs, Toolbar } from "@material-ui/core";
 import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -21,7 +21,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import Footer from "../components/footer/Footer.component";
 import tanjoreLogo from "../components/home/images/tanjoreCroppedLogo.png";
-import Grid from "@mui/material/Grid";
 import styles from "./Router.module.css";
 
 interface LinkTabProps {
@@ -63,23 +62,13 @@ function Router() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (

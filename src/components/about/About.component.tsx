@@ -1,14 +1,11 @@
-import React from "react";
 import styles from "./About.module.css";
 import about from "./images/rak.png";
 import about1 from "./images/rak2.png";
 import about2 from "./images/rak3.png";
 import about3 from "./images/rak4.png";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
-import { isTemplateHead } from "typescript";
 import aboutus from "./images/aboutus.png";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -80,19 +77,19 @@ function About() {
             lg={12}
             className={styles.overWrite}
           >
-          <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Item className={styles.overWrite}>
-              <p className={styles.p2}>
-                Wanting to provide an authentic dine in experience, in 2017 they
-                decided to take the leap and expand their restaurant to a larger
-                location, providing a buffet style lunch 6 days a week.
-                Customers were coming from different cities to try out our
-                savoury dishes. Some of our popular must tries are the Palace
-                Naan, the Biriyanis and of course our mouth-watering butter
-                chicken!
-              </p>
-            </Item>
-          </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              <Item className={styles.overWrite}>
+                <p className={styles.p2}>
+                  Wanting to provide an authentic dine in experience, in 2017
+                  they decided to take the leap and expand their restaurant to a
+                  larger location, providing a buffet style lunch 6 days a week.
+                  Customers were coming from different cities to try out our
+                  savoury dishes. Some of our popular must tries are the Palace
+                  Naan, the Biriyanis and of course our mouth-watering butter
+                  chicken!
+                </p>
+              </Item>
+            </Grid>
             <Item className={styles.overWrite}>
               <img className={styles.horizontalImage} src={about2} alt=""></img>
             </Item>

@@ -1,7 +1,5 @@
-import React from "react";
 import { Grid, Container } from "@material-ui/core";
 import contact from "./images/contact.png";
-import maps from "./images/maps.png";
 
 function Contact() {
   return (

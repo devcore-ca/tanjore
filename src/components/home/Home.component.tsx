@@ -1,8 +1,5 @@
-import React from "react";
-import styles from "./Home.module.css";
 import heropage from "./images/heroImage.png";
 import Gallery from "../gallery/SwiperGallery.component";
-import { fontFamily } from "@mui/system";
 
 function Home() {
   return (

@@ -1,13 +1,10 @@
 /** @format */
 
-import React from "react";
-import styles from "./Footer.module.css";
 import Fab from "@material-ui/core/Fab";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { createStyles, Theme, makeStyles } from "@material-ui/core/styles";
-import { AppBar, Container, Toolbar, Typography } from "@material-ui/core";
-import { orange } from "@material-ui/core/colors";
+import { Toolbar, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

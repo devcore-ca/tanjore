@@ -2,7 +2,6 @@
 import { Navigation, Pagination } from "swiper";
 // Direct React component imports
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
-import React from "react";
 
 // Styles must use direct files imports
 import "swiper/swiper.scss"; // core Swiper
@@ -55,7 +54,7 @@ const sourceImages = [
   },
 ];
 
-const Slides = sourceImages.map((image, index) => {
+const Slides = sourceImages.map((image) => {
   return (
     <div className={styles.slideWrapper}>
       <SwiperSlide>

@@ -5,8 +5,7 @@ import updatedMenuImage2 from "./images/updatedMenuImage2.png";
 import style from "./Menu.module.css";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
-import { makeStyles } from "@mui/material";
+import Button from "@mui/material/Button";
 
 function Menu() {
   const [open, setOpen] = React.useState(false);
@@ -18,17 +17,17 @@ function Menu() {
 
   const styles = {
     "&.MuiButton-root": {
-      border: "2px black solid"
+      border: "2px black solid",
     },
     "&.MuiButton-text": {
-      color: "white"
+      color: "white",
     },
     "&.MuiButton-contained": {
-      color: "yellow"
+      color: "yellow",
     },
     "&.MuiButton-outlined": {
-      color: "brown"
-    }
+      color: "brown",
+    },
   };
   return (
     <body>
@@ -42,10 +41,19 @@ function Menu() {
           aria-describedby="modalMenu2des"
         >
           <Box className={style.boxStyle}>
-            <Button variant="text" onClick={handleClose2} sx={styles} className={style.menuLightBoxCloseButton}>
+            <Button
+              variant="text"
+              onClick={handleClose2}
+              sx={styles}
+              className={style.menuLightBoxCloseButton}
+            >
               X
             </Button>
-            <img alt="menu2" src={updatedMenuImage2} className={style.menuImageLightBox1} />
+            <img
+              alt="menu2"
+              src={updatedMenuImage2}
+              className={style.menuImageLightBox1}
+            />
           </Box>
         </Modal>
       </div>
@@ -65,10 +73,19 @@ function Menu() {
           aria-describedby="modalMenu1des"
         >
           <Box className={style.boxStyle}>
-            <Button variant="text" onClick={handleClose} sx={styles} className={style.menuLightBoxCloseButton}>
+            <Button
+              variant="text"
+              onClick={handleClose}
+              sx={styles}
+              className={style.menuLightBoxCloseButton}
+            >
               X
             </Button>
-            <img alt="menu1" src={updatedMenuImage1} className={style.menuImageLightBox2} />
+            <img
+              alt="menu1"
+              src={updatedMenuImage1}
+              className={style.menuImageLightBox2}
+            />
           </Box>
         </Modal>
       </div>
@@ -79,9 +96,7 @@ function Menu() {
         className={style.menuImage1}
         onClick={handleOpen}
       />
-
     </body>
   );
 }
 export default Menu;
-
