@@ -32,9 +32,10 @@ Our deployment process is as follows:
 1. Checkout main branch locally
 1. Git pull
 1. Run `npm run deploy` from main branch
-1. There is a special branch `gh-pages` which will auto deploy whatever is on main, onto tanjore.ca
+1. There is a special branch `gh-pages` which will auto deploy whatever is on main, onto tanjore.ca. You don't need to manually touch the `gh-pages` branch at all for deployment.
 1. Open Github settings: https://github.com/devcore-ca/tanjore/settings/pages
-1. Inside the "Custom Domain" field, we should put `tanjore.ca` and hit Save.
+1. Inside the "Custom Domain" field, we should put `tanjore.ca` and hit Save. Must do after every deploy.
+1. Check https://tanjore.ca/ and devcore-ca.github.io/tanjore
 
 ### Errors during deployment
 
