@@ -1,4 +1,4 @@
-import heropage from "./images/heroImage.png";
+import heroImage from "./images/heroImage.png";
 import Gallery from "../gallery/SwiperGallery.component";
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
       <div>
         <img
           alt=""
-          src={heropage}
+          src={heroImage}
           style={{
             width: "100%",
           }}
