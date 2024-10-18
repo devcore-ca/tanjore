@@ -25,7 +25,8 @@ function Footer() {
     <Toolbar className={classes.toolbar}>
       <div>
         <Typography variant="body1" color="inherit">
-          Copyright © 2024 Tanjore Indian Cuisine | Website by Janac.me
+          Copyright © 2024 Tanjore Indian Cuisine | Website by{" "}
+          <a href="https://janac.me/">Janac.me</a>
         </Typography>
       </div>
       <div>
