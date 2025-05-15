@@ -25,7 +25,7 @@ function Contact() {
             <p>(613) 967-5967</p>
             <h1>OPERATING HOURS</h1>
             <p>Monday: CLOSED</p>
-            <p>Tuesday - Sunday: 12:00 PM - 8:00 PM</p>
+            <p>Tuesday - Sunday: 12:00 PM - 7:15 PM</p>
           </Grid>
           <Grid
             direction="column"
