@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://tanjore.ca",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.4.4",
@@ -12,7 +14,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "5.1.8",
-    "gh-pages": "3.2.3",
+    "gh-pages": "6.3.0",
     "mime": "^2.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,8 +27,8 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d build",
+    "predeploy": "pnpm run build",
+    "deploy": "pnpm run build && gh-pages -d build -r https://github.com/Dev-Corps/tanjore.git",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
